@@ -15,12 +15,21 @@ const Hero: React.FC = () => {
       className="relative min-h-screen flex items-center justify-center"
     >
       {/* Background Image IMG Tag (from public folder) */}
+      {/* Mobile-Only Background Image (Visible on small screens) */}
       <img
-        src="/images/Law.png" // This is the direct path to your image
-        alt=""
-        className="absolute inset-0 -z-10 w-full h-full object-cover object-center"
+        src="/images/Law-mobile.png"
+        alt="hero background"
+        className="absolute inset-0 -z-10 w-full h-full object-cover md:hidden"
       />
-      {/* The dark overlay */}
+
+      {/* Desktop-Only Background Image (Visible on medium screens and up) */}
+      <img
+        src="/images/Law.png"
+        alt="hero background"
+        className="absolute inset-0 -z-10 w-full h-full object-cover hidden md:block"
+      />
+
+      {/* The dark overlay (applies to both) */}
       <div className="absolute inset-0 -z-10 bg-navy-900/75"></div>
 
       {/* Text Content Container */}

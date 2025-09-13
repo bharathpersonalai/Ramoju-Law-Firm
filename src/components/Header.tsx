@@ -101,11 +101,11 @@ const Header: React.FC = () => {
               <div className="flex items-center pt-2">
                 <Phone className="h-4 w-4 text-gold mr-2" />
                 <a
-                  href="tel:+1-555-123-4567"
+                  href="tel:919553410353" 
                   className="text-navy-900 font-semibold hover:text-gold transition-colors duration-200"
                   style={{ fontFamily: 'Inter, sans-serif' }}
                 >
-                  (555) 123-4567
+                  +91 95534 10353
                 </a>
               </div>
             </nav>

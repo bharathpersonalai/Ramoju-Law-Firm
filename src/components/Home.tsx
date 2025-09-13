@@ -14,22 +14,18 @@ const Hero: React.FC = () => {
       id="home"
       className="relative min-h-screen flex items-center justify-center"
     >
-      {/* Background Image (Unchanged) */}
-      <div
-        className="absolute inset-0 z-0"
-        style={{
-          backgroundImage: `url(/images/Law.png)`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-        }}
-      >
-        <div className="absolute inset-0 bg-navy-900/75"></div>
-      </div>
+      {/* Background Image IMG Tag (from public folder) */}
+      <img
+        src="/images/Law.png" // This is the direct path to your image
+        alt=""
+        className="absolute inset-0 -z-10 w-full h-full object-cover object-center"
+      />
+      {/* The dark overlay */}
+      <div className="absolute inset-0 -z-10 bg-navy-900/75"></div>
 
       {/* Text Content Container */}
       {/* CHANGE 2: Removed layout classes from here to simplify */}
-      <div className="relative z-10 -translate-y-20"> 
+      <div className="relative z-10 -translate-y-20">
         <div className="text-white text-center max-w-4xl mx-auto px-4">
           <h1
             className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6"
@@ -47,7 +43,7 @@ const Hero: React.FC = () => {
           className="whitespace-nowrap px-6 sm:px-6 py-3 bg-gold text-white font-semibold rounded-full hover:bg-gold/90 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
           style={{ fontFamily: "Inter, sans-serif" }}
         >
-          Request a free consultation  
+          Request a free consultation
         </button>
       </div>
     </section>

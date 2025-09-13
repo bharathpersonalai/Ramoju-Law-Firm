@@ -37,11 +37,13 @@ const Header: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
-          <div className="flex-shrink-0">
-            <h1 className="text-2xl font-bold text-navy-900" style={{ fontFamily: 'Merriweather, serif' }}>
-              Ramoju Law Firm
-            </h1>
-          </div>
+          <a href="#home" aria-label="Ramoju Law Firm, go to homepage">
+  <img 
+    src="/images/logo.png" // IMPORTANT: Use your exact file name and extension (e.g., .png, .svg)
+    alt="Ramoju Law Firm Logo"
+    className="h-10 w-auto" // You can adjust h-10 to change the logo size
+  />
+</a>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">

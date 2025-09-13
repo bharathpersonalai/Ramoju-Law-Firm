@@ -12,7 +12,7 @@ const Hero: React.FC = () => {
     // CHANGE 1: Added flexbox centering classes here
     <section
       id="home"
-      className="relative min-h-screen flex items-center justify-center"
+      className="relative min-h-[90vh] flex items-center justify-center"
     >
       {/* Background Image IMG Tag (from public folder) */}
       {/* Mobile-Only Background Image (Visible on small screens) */}

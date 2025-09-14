@@ -66,13 +66,13 @@ const About: React.FC = () => {
                   >
                     Education
                   </h3>
-                 <p
-  className="text-gray-700 font-medium"
-  style={{ fontFamily: "Inter, sans-serif" }}
->
-  • MBA (Marketing and HR) from Osmania University. <br />
-  • LLB from Padala Ram Reddy Law College (O.U) Hyderabad.
-</p>
+                  <p
+                    className="text-gray-700 font-medium list-disc list-outside pl-5 space-y-1"
+                    style={{ fontFamily: "Inter, sans-serif" }}
+                  >
+                    • MBA (Marketing and HR) from Osmania University.<br />
+                    • LLB from Padala Ram Reddy Law College (O.U) Hyderabad.
+                  </p>
                 </div>
               </div>
 

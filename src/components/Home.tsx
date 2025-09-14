@@ -1,13 +1,6 @@
 import React from "react";
 
 const Hero: React.FC = () => {
-  const scrollToContact = () => {
-    const element = document.getElementById("contact");
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
   return (
     // CHANGE 1: Added flexbox centering classes here
     <section
@@ -47,13 +40,15 @@ const Hero: React.FC = () => {
 
       {/* Button (Unchanged and still positioned independently) */}
       <div className="absolute z-10 bottom-12 left-1/2 -translate-x-1/2">
-        <button
-          onClick={scrollToContact}
-          className="whitespace-nowrap px-6 sm:px-6 py-3 bg-gold text-white font-semibold rounded-full hover:bg-gold/90 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
+        <a
+          href="https://wa.me/919553410353"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="whitespace-nowrap px-5 sm:px-6 py-3 text-sm bg-gold text-white font-semibold rounded-full hover:bg-gold/90 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
           style={{ fontFamily: "Inter, sans-serif" }}
         >
-          Request a free consultation
-        </button>
+          Request a Consultation
+        </a>
       </div>
     </section>
   );

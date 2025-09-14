@@ -6,6 +6,8 @@ import Services from './components/Services';
 import Gallery from './components/Gallery';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import WhatsAppFloat from './components/WhatsAppFloat'; // 1. Import the component
+
 
 function App() {
   useEffect(() => {
@@ -34,6 +36,7 @@ function App() {
         <Contact />
       </main>
       <Footer />
+      <WhatsAppFloat /> {/* 2. Add the component here */} 
     </div>
   );
 }

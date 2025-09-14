@@ -1,56 +1,59 @@
-import React, { useState } from 'react';
-import { X } from 'lucide-react';
+import React, { useState } from "react";
+import { X } from "lucide-react";
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
 
   const galleryImages = [
     {
-      src: 'https://images.pexels.com/photos/5668473/pexels-photo-5668473.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Modern law office reception area',
-      title: 'Reception Area'
+      src: "/images/Legal Consultation.png",
+      alt: "Legal consultation session",
+      title: "Legal Consultation",
     },
     {
-      src: 'https://images.pexels.com/photos/5668858/pexels-photo-5668858.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Professional law library',
-      title: 'Law Library'
+      src: "/images/Legal Research.png",
+      alt: "Law Research",
+      title: "Legal Research",
     },
     {
-      src: 'https://images.pexels.com/photos/5669602/pexels-photo-5669602.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Conference room for client meetings',
-      title: 'Conference Room'
+      src: "/images/Legal team.png",
+      alt: "Conference room",
+      title: "Team Collaboration",
     },
     {
-      src: 'https://images.pexels.com/photos/5668886/pexels-photo-5668886.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Attorney office space',
-      title: 'Attorney Office'
+      src: "/images/Court.png",
+      alt: "Court",
+      title: "Court Preparation",
     },
     {
-      src: 'https://images.pexels.com/photos/5669619/pexels-photo-5669619.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Team meeting in progress',
-      title: 'Team Collaboration'
+      src: "/images/Professional.png",
+      alt: "Pro",
+      title: "Proessional Excellence",
     },
     {
-      src: 'https://images.pexels.com/photos/5668774/pexels-photo-5668774.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Professional consultation',
-      title: 'Client Consultation'
-    }
+      src: "/images/case.png",
+      alt: "case",
+      title: "Case Strategy",
+    },
   ];
 
   return (
     <section id="gallery" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-slate-800 mb-4">Our Office</h2>
+          <h2 className="text-4xl font-bold text-slate-800 mb-4">
+            Our Team at Work
+          </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Take a look at our professional environment designed to provide 
-            comfort and confidence during your legal consultations.
+            See our legal experts in action, collaborating and delivering
+            top-tier solutions for our clients. Each image reflects our
+            dedication and professionalism.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {galleryImages.map((image, index) => (
-            <div 
+            <div
               key={index}
               className="relative group cursor-pointer overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
               onClick={() => setSelectedImage(index)}
@@ -73,12 +76,16 @@ const Gallery = () => {
         {selectedImage !== null && (
           <div className="fixed inset-0 z-50 bg-black bg-opacity-75 flex items-center justify-center p-4">
             <div className="relative max-w-4xl max-h-full">
+              
+              {/* --- THIS BUTTON IS NOW FIXED --- */}
               <button
                 onClick={() => setSelectedImage(null)}
-                className="absolute -top-12 right-0 text-white hover:text-gray-300"
+                className="absolute top-2 right-2 text-white bg-gray-800 bg-opacity-50 rounded-full p-1 hover:bg-opacity-75 transition-all"
               >
-                <X size={32} />
+                <X size={28} />
               </button>
+              {/* ----------------------------- */}
+
               <img
                 src={galleryImages[selectedImage].src}
                 alt={galleryImages[selectedImage].alt}
@@ -95,4 +102,4 @@ const Gallery = () => {
   );
 };
 
-export default Gallery; 
+export default Gallery;

@@ -6,22 +6,22 @@ const Services: React.FC = () => {
     {
       icon: Users,
       title: 'Civil',
-      description: 'Divorce, custody, child support, and adoption proceedings handled with care and expertise.'
+      description: 'Receive expert legal guidance for civil cases involving contracts, property disputes, inheritance matters, and personal rights.'
     },
     {
       icon: FileText,
       title: 'Criminal',
-      description: 'Wills, trusts, and estate administration to protect your family\'s future.'
+      description: 'Get professional defense and legal counsel for criminal cases, including minor offenses and serious criminal charges.'
     },
     {
       icon: Building,
       title: 'Family Cases',
-      description: 'Contract negotiations, business formation, and commercial litigation support.'
+      description: 'Obtain compassionate legal support for family cases, including divorce, child custody, spousal support, and property division.'
     },
     {
       icon: Home,
       title: 'Legal Opinion',
-      description: 'Property transactions, title issues, and real estate dispute resolution.'
+      description: 'Receive reliable and expert legal opinions on contracts, business agreements, disputes, and other legal matters to ensure informed decision-making and risk mitigation.' 
     }
   ];
 

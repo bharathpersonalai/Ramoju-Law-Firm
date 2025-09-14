@@ -17,7 +17,7 @@ const Hero: React.FC = () => {
 
       {/* Desktop-Only Background Image (Visible on medium screens and up) */}
       <img
-        src="/images/Law.png"
+        src="/images/law.jpg" 
         alt="hero background"
         className="absolute inset-0 -z-10 w-full h-full object-cover hidden md:block"
       />

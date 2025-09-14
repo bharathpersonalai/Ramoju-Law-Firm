@@ -29,15 +29,15 @@ const About: React.FC = () => {
               className="text-lg text-gray-700 mb-6 leading-relaxed"
               style={{ fontFamily: "Inter, sans-serif" }}
             >
-              With over 15 years of legal experience, Shankara Chary combines legal
-              expertise with a compassionate approach, ensuring clients feel
-              heard and supported throughout their legal journey. Specializing
-              in [Civil, Criminal, Family Cases, Legal Opinion], He works
-              diligently to achieve the best possible outcomes for each case.
-              Shankara believes that clear communication and personalized legal
-              services are key to effective legal representation. As a trusted
-              legal advisor, his client-focused strategy has earned a reputation
-              for delivering exceptional results in [Telangana].
+              With over 15 years of legal experience, Shankara Chary combines
+              legal expertise with a compassionate approach, ensuring clients
+              feel heard and supported throughout their legal journey.
+              Specializing in [Civil, Criminal, Family Cases, Legal Opinion], He
+              works diligently to achieve the best possible outcomes for each
+              case. Shankara believes that clear communication and personalized
+              legal services are key to effective legal representation. As a
+              trusted legal advisor, his client-focused strategy has earned a
+              reputation for delivering exceptional results in [Telangana].
             </p>
 
             <p
@@ -61,24 +61,22 @@ const About: React.FC = () => {
                 </div>
                 <div>
                   <h3
-  className="text-xl font-semibold text-navy-900 mb-2"
-  style={{ fontFamily: "Merriweather, serif" }}
->
-  Education
-</h3>
-<p
-  className="text-gray-700"
+                    className="text-xl font-semibold text-navy-900 mb-2"
+                    style={{ fontFamily: "Merriweather, serif" }}
+                  >
+                    Education
+                  </h3>
+                 <p
+  className="text-gray-700 font-medium"
   style={{ fontFamily: "Inter, sans-serif" }}
 >
-  MBA (Marketing and HR) from Osmania University. <br />
-  LLB from Padala Ram Reddy Law College (O.U) Hyderabad.
+  • MBA (Marketing and HR) from Osmania University. <br />
+  • LLB from Padala Ram Reddy Law College (O.U) Hyderabad.
 </p>
-
                 </div>
               </div>
 
               {/* Bar Admissions and Professional Memberships sections have been removed */}
-              
             </div>
           </div>
         </div>

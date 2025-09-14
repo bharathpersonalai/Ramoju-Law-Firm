@@ -107,7 +107,7 @@ const Contact: React.FC = () => {
                   <div className="flex-shrink-0 w-12 h-12 rounded-full bg-white/20 flex items-center justify-center">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      width="24"
+                      width="18"
                       height="24"
                       viewBox="0 0 24 24"
                       fill="currentColor"

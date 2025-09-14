@@ -66,19 +66,25 @@ const About: React.FC = () => {
                   >
                     Education
                   </h3>
-                  <ul 
-  className="text-gray-700 font-medium space-y-1"
-  style={{ fontFamily: "Inter, sans-serif" }}
->
-  <li className="flex">
-    <span className="w-5 flex-shrink-0">•</span>
-    <span><strong>MBA</strong> (Marketing and HR) from Osmania University.</span>
-  </li>
-  <li className="flex">
-    <span className="w-5 flex-shrink-0">•</span>
-    <span><strong>LLB</strong> from Padala Ram Reddy Law College (O.U) Hyderabad.</span>
-  </li>
-</ul>
+                  <ul
+                    className="text-gray-700 font-medium space-y-1"
+                    style={{ fontFamily: "Inter, sans-serif" }}
+                  >
+                    <li className="flex">
+                      <span className="w-5 flex-shrink-0">•</span>
+                      <span>
+                        <strong>MBA</strong> (Marketing and HR) from Osmania
+                        University.
+                      </span>
+                    </li>
+                    <li className="flex">
+                      <span className="w-5 flex-shrink-0">•</span>
+                      <span>
+                        <strong>LLB</strong> from Padala Ram Reddy Law College
+                        (O.U) Hyderabad.
+                      </span>
+                    </li>
+                  </ul>
                 </div>
               </div>
 

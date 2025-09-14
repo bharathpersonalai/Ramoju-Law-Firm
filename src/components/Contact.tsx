@@ -37,8 +37,8 @@ const Contact: React.FC = () => {
 
     {/* Phone Box */}
     <div className="bg-[#1a2f42] text-white rounded-2xl p-6 flex items-center space-x-6 transition-transform hover:scale-105 duration-300">
-      <div className="flex-shrink-0 w-14 h-14 rounded-full bg-white/20 flex items-center justify-center">
-        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+      <div className="flex-shrink-0 w-12 h-12 rounded-full bg-white/20 flex items-center justify-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
       </div>
       <div>
         <h4 className="text-2xl font-bold" style={{ fontFamily: 'Merriweather, serif' }}>Call Us:</h4>
@@ -49,8 +49,8 @@ const Contact: React.FC = () => {
 
     {/* Email Box */}
     <div className="bg-[#1a2f42] text-white rounded-2xl p-6 flex items-center space-x-6 transition-transform hover:scale-105 duration-300">
-      <div className="flex-shrink-0 w-16 h-16 rounded-full bg-white/20 flex items-center justify-center">
-        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"></path></svg>
+      <div className="flex-shrink-0 w-12 h-12 rounded-full bg-white/20 flex items-center justify-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"></path></svg>
       </div>
       <div>
         <h4 className="text-2xl font-bold" style={{ fontFamily: 'Merriweather, serif' }}>Email Us:</h4>
@@ -60,8 +60,8 @@ const Contact: React.FC = () => {
 
     {/* Office Address Box */}
     <div className="bg-[#1a2f42] text-white rounded-2xl p-6 flex items-center space-x-6 transition-transform hover:scale-105 duration-300">
-      <div className="flex-shrink-0 w-16 h-16 rounded-full bg-white/20 flex items-center justify-center">
-        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path></svg>
+      <div className="flex-shrink-0 w-12 h-12 rounded-full bg-white/20 flex items-center justify-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path></svg>
       </div>
       <div>
         <h4 className="text-2xl font-bold" style={{ fontFamily: 'Merriweather, serif' }}>Visit Us:</h4>

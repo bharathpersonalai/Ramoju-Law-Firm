@@ -33,7 +33,8 @@ const Hero: React.FC = () => {
             className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6"
             style={{ fontFamily: "Merriweather, serif" }}
           >
-            Experienced Legal Counsel
+            RAMOJU LAW FIRM <br />
+  <span className="text-xl text-white-700">Hyderabad</span> 
           </h1>
         </div>
       </div>

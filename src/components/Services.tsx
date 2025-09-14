@@ -1,27 +1,36 @@
 import React from 'react';
-import { Users, FileText, Building, Home } from 'lucide-react';
 
 const Services: React.FC = () => {
   const services = [
     {
-      icon: Users,
-      title: 'Civil',
-      description: 'Receive expert legal guidance for civil cases involving contracts, property disputes, inheritance matters, and personal rights.'
+      imageSrc: '/assets/civil.png',
+      title: 'Civil Litigation',
+      description: 'Expert representation in civil litigation for resolving disputes involving contracts, property, and personal rights. We provide effective legal solutions to protect your interests in civil courts.'
     },
     {
-      icon: FileText,
-      title: 'Criminal',
-      description: 'Get professional defense and legal counsel for criminal cases, including minor offenses and serious criminal charges.'
+      imageSrc: '/assets/criminal.png',
+      title: 'Criminal Defense',
+      description: 'Providing strong criminal defense services for clients facing criminal charges. Our experienced team works tirelessly to ensure the best possible outcome for your case, defending your rights every step of the way.'
     },
     {
-      icon: Building,
-      title: 'Family Cases',
-      description: 'Obtain compassionate legal support for family cases, including divorce, child custody, spousal support, and property division.'
+      imageSrc: '/assets/divorce.png',
+      title: 'Matrimonial Disputes',
+      description: 'Experienced legal support in matrimonial disputes, including divorce, child custody, and spousal support. We handle sensitive family matters with care and professionalism to ensure the best results for you and your family.'
     },
     {
-      icon: Home,
-      title: 'Legal Opinion',
-      description: 'Receive reliable and expert legal opinions on contracts, business agreements, disputes, and other legal matters to ensure informed decision-making and risk mitigation.' 
+      imageSrc: '/assets/property.png',
+      title: 'Property & Real Estate',
+      description: 'Comprehensive legal services in property and real estate matters, including property disputes, transactions, and leases. We ensure your rights are protected in every real estate deal.'
+    },
+    {
+      imageSrc: '/assets/insolvency.png',
+      title: 'Insolvency & Bankruptcy',
+      description: 'Offering expert legal advice and representation in insolvency and bankruptcy cases. We guide businesses and individuals through financial distress, helping to find the most viable legal solutions.'
+    },
+    {
+      imageSrc: '/assets/cyber.png',
+      title: 'IT & Cyber Law',
+      description: 'Specialized legal services in IT and cyber law, covering issues such as data protection, intellectual property, and cybercrime. We offer legal counsel for businesses and individuals navigating the digital landscape.'
     }
   ];
 
@@ -33,7 +42,7 @@ const Services: React.FC = () => {
             className="text-4xl md:text-5xl font-bold text-navy-900 mb-6"
             style={{ fontFamily: 'Merriweather, serif' }}
           >
-            Practice Areas
+            Our Services
           </h2>
           <p 
             className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed"
@@ -44,27 +53,35 @@ const Services: React.FC = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-gray-50 rounded-xl p-8 text-center hover:shadow-xl transition-all duration-300 hover:transform hover:scale-105 group"
+              className="bg-gray-50 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300"
+              // --- ANIMATION ATTRIBUTES ADDED HERE ---
+               data-aos="fade-right"
+              data-aos-delay={index * 100}
+              // ------------------------------------
             >
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-navy-900 rounded-full mb-6 group-hover:bg-gold transition-colors duration-300">
-                <service.icon className="h-8 w-8 text-white" />
+              <img 
+                src={service.imageSrc} 
+                alt={service.title} 
+                className="w-full h-48 object-cover" 
+              />
+              <div className="p-8 text-center">
+                <h3 
+                  className="text-2xl font-bold text-navy-900 mb-4"
+                  style={{ fontFamily: 'Merriweather, serif' }}
+                >
+                  {service.title}
+                </h3>
+                <p 
+                  className="text-gray-600 leading-relaxed"
+                  style={{ fontFamily: 'Inter, sans-serif' }}
+                >
+                  {service.description}
+                </p>
               </div>
-              <h3 
-                className="text-2xl font-bold text-navy-900 mb-4"
-                style={{ fontFamily: 'Merriweather, serif' }}
-              >
-                {service.title}
-              </h3>
-              <p 
-                className="text-gray-600 leading-relaxed"
-                style={{ fontFamily: 'Inter, sans-serif' }}
-              >
-                {service.description}
-              </p>
             </div>
           ))}
         </div>

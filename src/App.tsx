@@ -1,4 +1,6 @@
 import React, { useEffect } from 'react';
+import AOS from 'aos';                  // Import AOS
+import 'aos/dist/aos.css';               // Import AOS styles 
 import Header from './components/Header';
 import Home from './components/Home';
 import About from './components/About';
@@ -6,8 +8,7 @@ import Services from './components/Services';
 import Gallery from './components/Gallery';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import WhatsAppFloat from './components/WhatsAppFloat'; // 1. Import the component
-
+import WhatsAppFloat from './components/WhatsAppFloat';
 
 function App() {
   useEffect(() => {
@@ -19,6 +20,13 @@ function App() {
 
     // Update page title
     document.title = 'Ramoju Law Firm - Experienced Legal Counsel';
+
+    // --- INITIALIZE AOS HERE ---
+    AOS.init({
+      duration: 1000, // Animation lasts 1 second
+      once: true,     // Animation happens only once when you scroll down
+    });
+    // -------------------------
 
     return () => {
       document.head.removeChild(link);
@@ -36,7 +44,7 @@ function App() {
         <Contact />
       </main>
       <Footer />
-      <WhatsAppFloat /> {/* 2. Add the component here */} 
+      <WhatsAppFloat /> 
     </div>
   );
 }

@@ -6,32 +6,32 @@ const Gallery = () => {
 
   const galleryImages = [
     {
-      src: "/images/Legal Consultation.png",
+      src: "/images/Legal Consultation.jpg",
       alt: "Legal consultation session",
       title: "Legal Consultation",
     },
     {
-      src: "/images/Legal Research.png",
+      src: "/images/LegalResearch.jpg",
       alt: "Law Research",
       title: "Legal Research",
     },
     {
-      src: "/images/Legal team.png",
+      src: "/images/Legalteam.jpg",
       alt: "Conference room",
       title: "Team Collaboration",
     },
     {
-      src: "/images/Court.png",
+      src: "/images/Court.jpg",
       alt: "Court",
       title: "Court Preparation",
     },
     {
-      src: "/images/Professional.png",
+      src: "/images/Professional.jpg",
       alt: "Pro",
       title: "Proessional Excellence",
     },
     {
-      src: "/images/case.png",
+      src: "/images/case.jpg",
       alt: "case",
       title: "Case Strategy",
     },

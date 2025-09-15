@@ -10,7 +10,7 @@ const Hero: React.FC = () => {
       {/* Background Image IMG Tag (from public folder) */}
       {/* Mobile-Only Background Image (Visible on small screens) */}
       <img
-        src="/images/logo-mobile.png"
+        src="/images/logo-mobile.jpg"
         alt="hero background"
         className="absolute inset-0 -z-10 w-full h-full object-cover md:hidden"
       />

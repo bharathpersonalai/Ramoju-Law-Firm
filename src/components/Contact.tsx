@@ -188,7 +188,7 @@ const Contact: React.FC = () => {
             {/* Your New Image */}
             <div className="rounded-xl overflow-hidden shadow-xl">
               <img
-                src="/images/appointment.png"
+                src="/images/appointment.jpg"
                 alt="A professional and welcoming law office"
                 className="w-full h-[450px] object-cover"
               />

@@ -9,7 +9,7 @@ const About: React.FC = () => {
           {/* Image */}
           <div className="relative">
             <img
-              src="/images/profile.jpg"
+              src="/images/profile.jpg"  
               alt="Shankara chary in her office"
               className="w-full h-[600px] object-cover rounded-lg shadow-xl"
             />

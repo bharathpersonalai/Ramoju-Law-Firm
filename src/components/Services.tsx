@@ -3,32 +3,32 @@ import React from 'react';
 const Services: React.FC = () => {
   const services = [
     {
-      imageSrc: '/assets/civil.png',
+      imageSrc: '/assets/civil.jpg',
       title: 'Civil Litigation',
       description: 'Expert representation in civil litigation for resolving disputes involving contracts, property, and personal rights. We provide effective legal solutions to protect your interests in civil courts.'
     },
     {
-      imageSrc: '/assets/criminal.png',
+      imageSrc: '/assets/criminal.jpg',
       title: 'Criminal Defense',
       description: 'Providing strong criminal defense services for clients facing criminal charges. Our experienced team works tirelessly to ensure the best possible outcome for your case, defending your rights every step of the way.'
     },
     {
-      imageSrc: '/assets/divorce.png',
+      imageSrc: '/assets/divorce.jpg',
       title: 'Matrimonial Disputes',
       description: 'Experienced legal support in matrimonial disputes, including divorce, child custody, and spousal support. We handle sensitive family matters with care and professionalism to ensure the best results for you and your family.'
     },
     {
-      imageSrc: '/assets/property.png',
+      imageSrc: '/assets/property.jpg',
       title: 'Property & Real Estate',
       description: 'Comprehensive legal services in property and real estate matters, including property disputes, transactions, and leases. We ensure your rights are protected in every real estate deal.'
     },
     {
-      imageSrc: '/assets/insolvency.png',
+      imageSrc: '/assets/insolvency.jpg',
       title: 'Insolvency & Bankruptcy',
       description: 'Offering expert legal advice and representation in insolvency and bankruptcy cases. We guide businesses and individuals through financial distress, helping to find the most viable legal solutions.'
     },
     {
-      imageSrc: '/assets/cyber.png',
+      imageSrc: '/assets/cyber.jpg',
       title: 'IT & Cyber Law',
       description: 'Specialized legal services in IT and cyber law, covering issues such as data protection, intellectual property, and cybercrime. We offer legal counsel for businesses and individuals navigating the digital landscape.'
     }

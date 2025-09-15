@@ -29,7 +29,7 @@ const About: React.FC = () => {
               className="text-lg text-gray-700 mb-6 leading-relaxed"
               style={{ fontFamily: "Inter, sans-serif" }}
             >
-              With over 15 years of legal experience, Shankara Chary combines
+              With over 5 years of legal experience, Shankara Chary combines
               legal expertise with a compassionate approach, ensuring clients
               feel heard and supported throughout their legal journey.
               Specializing in [Civil, Criminal, Family Cases, Legal Opinion], He

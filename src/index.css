@@ -238,3 +238,20 @@ textarea:focus-visible {
 .Btn:active {
   transform: translate(2px, 2px);
 }
+/* call Button */
+.call-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  border: none;
+  background-color: #3B82F6; /* Blue color for call button */
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.call-button:hover {
+  background-color: #2563EB; /* A slightly darker blue for hover */
+}

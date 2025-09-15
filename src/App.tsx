@@ -9,6 +9,7 @@ import Gallery from './components/Gallery';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import WhatsAppFloat from './components/WhatsAppFloat';
+import CallFloat from './components/CallFloat'; // 1. Import the new CallFloat component 
 
 function App() {
   useEffect(() => {
@@ -23,8 +24,8 @@ function App() {
 
     // --- INITIALIZE AOS HERE ---
     AOS.init({
-      duration: 1000, // Animation lasts 1 second
-      once: true,     // Animation happens only once when you scroll down
+      duration: 2000, // Animation lasts 2 second
+      once: false,     // Animation happens only once when you scroll down
     });
     // -------------------------
 
@@ -45,6 +46,7 @@ function App() {
       </main>
       <Footer />
       <WhatsAppFloat /> 
+       <CallFloat />
     </div>
   );
 }
